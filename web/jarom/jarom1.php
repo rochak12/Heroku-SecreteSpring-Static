@@ -12,9 +12,9 @@ session_start();
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="/style/style.css" rel="stylesheet" type="text/css" />
+<link href="../style/style.css" rel="stylesheet" type="text/css" />
 <style>
-/*html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}*/
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 .w3-sidebar {
   z-index: 3;
   width: 250px;
@@ -23,7 +23,7 @@ session_start();
   height: inherit;
 }
 </style>
-<script type="text/javascript" src="/javascript.js"></script>
+<script type="text/javascript" src="../javascript.js"></script>
 </HEAD>
 
 
@@ -42,7 +42,7 @@ session_start();
       <!--changes must be done below this-->
 
 
-      <?php include ($_SERVER['DOCUMENT_ROOT']."/1nephi/1nephiChapters.php");?>
+      <?php include ($_SERVER['DOCUMENT_ROOT']."/jarom/jaromChapters.php");?>
       <?php include ($_SERVER['DOCUMENT_ROOT']."/databaseConnection.php");?>
       <?//php include ($_SERVER['DOCUMENT_ROOT']."/1nephi/1nephi11.php");?> 
     
@@ -52,7 +52,7 @@ session_start();
 
 
       <table>
-<tr><td class="caption"> <span class="english"> Chaper 1 /</span><span class="nepali">अध्याय १</span></td></tr>
+<tr><td class="caption"> <span class="english"> Jarom 1 </span><span class="nepali">/ यारोम १</span></td></tr>
 
 <div class="wrap" id="demo"></div> 
 
@@ -64,21 +64,21 @@ session_start();
 
 
 <?php
-   $json = file_get_contents("json/jsoneng.json");
+   $json = file_get_contents("../json/jsoneng.json");
    $obj = json_decode($json, true);
 
-   $json2 = file_get_contents("json/jsonnep.json");
+   $json2 = file_get_contents("../json/jsonnep.json");
    $obj2 = json_decode($json2, true);
 
 
-    $bookName = $obj['books'][0]['book'];
-    $chapterName = $obj['books'][0]['chapters'][0]['chapter'];
+    $bookName = $obj['books'][4]['book'];
+    $chapterName = $obj['books'][4]['chapters'][0]['chapter'];
     $GLOBALS['i'] = 0;
    
     foreach ($db->query("SELECT * FROM book where name_book ='$bookName'") as $booklist){
       $GLOBALS['bookNo'] =  $booklist['book_id'];
     }
-   foreach ($obj['books'][0]['chapters'][0]['verses'] as $print )  
+   foreach ($obj['books'][4]['chapters'][0]['verses'] as $print )  
    {
      $flag1 = FALSE;
      $currentVerse = $print['verse'];
@@ -88,8 +88,8 @@ session_start();
      else
  {    $username = $_SESSION['username']; }
      
-     if ($db->query("SELECT * FROM highlight where book_id=1 and chapter=1 and verse = $currentVerse and username = '$username' ")){
-    foreach ($db->query("SELECT * FROM highlight where book_id=1 and chapter=1 and username = '$username' ") as $row){
+     if ($db->query("SELECT * FROM highlight where book_id=5 and chapter=1 and verse = $currentVerse and username = '$username' ")){
+    foreach ($db->query("SELECT * FROM highlight where book_id=5 and chapter=1 and username = '$username' ") as $row){
      if ($row['verse'] === $print['verse']){
         echo "<tr><td class='english highlight'  id='"  . $print['verse'] ."'" . "onmouseup='callevent(" . $print['verse'] .  ",event)'><mark>";   
         echo $print['verse'] . " " ;
@@ -97,7 +97,7 @@ session_start();
 
         echo "<tr><td class='nepali highlight'  id='"  . $print['verse'] ."'" . "onmouseup='callevent(" . $print['verse'] .  ",event)'><mark>";   
         echo $print['verse'] . " " ;
-        echo $obj2['books'][0]['chapters'][0]['verses'][$i]['text'] . "</mark></td></tr>" ;
+        echo $obj2['books'][4]['chapters'][0]['verses'][$i]['text'] . "</mark></td></tr>" ;
 
         echo  "<tr><td class='invisible'></td></tr>" ;  
         $flag1 = TRUE;
@@ -111,7 +111,7 @@ session_start();
 
    echo "<tr><td class='nepali unhighlight'  id='"  . $print['verse'] ."'" . "onmouseup='callevent(" . $print['verse'] .  ",event)'>";   
    echo $print['verse'] . " " ;
-   echo $obj2['books'][0]['chapters'][0]['verses'][$i]['text'] . "</td></tr>" ;
+   echo $obj2['books'][4]['chapters'][0]['verses'][$i]['text'] . "</td></tr>" ;
 
    echo  "<tr><td class='invisible'></td></tr>" ;
 
