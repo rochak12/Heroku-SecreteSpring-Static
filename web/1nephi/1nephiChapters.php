@@ -66,7 +66,7 @@
 		<div><a href="../1nephi/1nephi20.php">20</a></div>
 		<div><a href="../1nephi/1nephi21.php">21</a></div>
 		<div><a href="../1nephi/1nephi22.php">22</a></div>
-	</div>../1nephi/
+	</div>
 	
 
     <!-- Chapter Header -->
