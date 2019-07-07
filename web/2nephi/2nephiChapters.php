@@ -46,7 +46,7 @@
 	<div class="flex-container">
 		<?php 
 		for ($i = 1; $i <= 33 ; $i++){
-			echo "<a href='2nephi$i.php'><div>$i </a></div>";
+			echo "<a href='../2nephi/2nephi$i.php'><div>$i </a></div>";
 		}	?>	
 	</div>
 	

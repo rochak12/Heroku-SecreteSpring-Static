@@ -46,7 +46,7 @@
 	<div class="flex-container">
 		<?php 
 		for ($i = 1; $i <= 15 ; $i++){
-			echo "<a href='ether$i.php'><div>$i</a></div>";
+			echo "<a href='../ether/ether$i.php'><div>$i</a></div>";
 		}	?>	
 	</div>
 	
