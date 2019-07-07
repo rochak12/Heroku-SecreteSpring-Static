@@ -46,7 +46,7 @@
 	<div class="flex-container">
 		<?php 
 		for ($i = 1; $i <= 1 ; $i++){
-			echo "<a href='wordsOfMormon$i.php'><div>$i</a></div>";
+			echo "<a href='../wordsOfMormon/wordsOfMormon$i.php'><div>$i</a></div>";
 		}	?>	
 	</div>
 	
