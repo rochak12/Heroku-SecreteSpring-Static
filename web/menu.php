@@ -9,9 +9,9 @@
   <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
     <a href="#" onclick="changeLanguage();return false;" class="w3-bar-item w3-button w3-theme-l1">Language</a>
-    <p style="margin:0px; padding:0px" href="#" class="w3-bar-item">&nbsp;&nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<span class="w3-hide-small">   &nbsp; &nbsp;</span></p>
+    <p style="margin:0px; padding:0px" href="#" class="w3-bar-item">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<span class="w3-hide-small">   &nbsp; &nbsp;</span></p>
     <a href="../login/login.php" class="w3-bar-item w3-button  w3-hover-white">Login</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+    <a href="../games/TicTacToe/tictactoe.html" class="w3-bar-item w3-button w3-hover-white">Games</a>
     <a href="#" class="w3-bar-item w3-button  w3-hide-small w3-hover-white">Values</a>
     <a href="../logout.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Logout</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Clients</a>
@@ -210,7 +210,7 @@ function w3_close() {
   <div class="content"> 
   <?php 
   for ($i = 1 ; $i <= 22 ; $i++){
-    echo "<a class='w3-bar-item w3-button w3-hover-black' href='../1nephi/1nephi$i'>1 Nephi $i</a>";
+    echo "<a class='w3-bar-item w3-button w3-hover-black' href='../1nephi/1nephi$i.php'>1 Nephi $i</a>";
   } 
 ?>
 </div>
@@ -218,7 +218,7 @@ function w3_close() {
 <div class="content">
 <?php 
   for ($i = 1 ; $i <= 33 ; $i++){
-    echo "<a class='w3-bar-item w3-button w3-hover-black' href='../2nephi/2nephi$i'>2 Nephi $i</a>";
+    echo "<a class='w3-bar-item w3-button w3-hover-black' href='../2nephi/2nephi$i.php'>2 Nephi $i</a>";
   } 
 ?>
 </div>
@@ -226,21 +226,21 @@ function w3_close() {
 <div class="content">
   <?php 
   for ($i = 1 ; $i <= 7 ; $i++){
-    echo "<a class='w3-bar-item w3-button w3-hover-black' href='../jacob/jacob$i'>Jacob $i</a>";
+    echo "<a class='w3-bar-item w3-button w3-hover-black' href='../jacob/jacob$i.php'>Jacob $i</a>";
   } 
 ?></div>
 
 
-<a href="../enos/enos1"><button class="collapsible2">   Enos</button></a>
-<a href="../jarom/jarom1"><button class="collapsible2"> Jarom</button></a>
-<a href="../omni/omni1"><button class="collapsible2">   Omni</button></a>
-<a href="../wordsOfMormon/wordsOfMormon1"><button class="collapsible2">  Words of Mormon</button></a>
+<a href="../enos/enos1.php"><button class="collapsible2">   Enos</button></a>
+<a href="../jarom/jarom1.php"><button class="collapsible2"> Jarom</button></a>
+<a href="../omni/omni1.php"><button class="collapsible2">   Omni</button></a>
+<a href="../wordsOfMormon/wordsOfMormon1.php"><button class="collapsible2">  Words of Mormon</button></a>
 
 <button class="collapsible">Mosiah</button>
 <div class="content">
   <?php 
   for ($i = 1 ; $i <= 29 ; $i++){
-    echo "<a class='w3-bar-item w3-button w3-hover-black' href='../mosiah/mosiah$i'>Mosiah $i</a>";
+    echo "<a class='w3-bar-item w3-button w3-hover-black' href='../mosiah/mosiah$i.php'>Mosiah $i</a>";
   } 
 ?></div>
 
@@ -249,7 +249,7 @@ function w3_close() {
 <div class="content">
   <?php 
   for ($i = 1 ; $i <= 63 ; $i++){
-    echo "<a class='w3-bar-item w3-button w3-hover-black' href='../alma/alma$i'>Alma $i</a>";
+    echo "<a class='w3-bar-item w3-button w3-hover-black' href='../alma/alma$i.php'>Alma $i</a>";
   } 
 ?></div>
 
@@ -257,7 +257,7 @@ function w3_close() {
 <div class="content">
   <?php 
   for ($i = 1 ; $i <= 16 ; $i++){
-    echo "<a class='w3-bar-item w3-button w3-hover-black' href='../helaman/helaman$i'>Helaman $i</a>";
+    echo "<a class='w3-bar-item w3-button w3-hover-black' href='../helaman/helaman$i.php'>Helaman $i</a>";
   } 
 ?></div>
 
@@ -265,17 +265,17 @@ function w3_close() {
 <div class="content">
   <?php 
   for ($i = 1 ; $i <= 30 ; $i++){
-    echo "<a class='w3-bar-item w3-button w3-hover-black' href='../3nephi/3nephi$i'>3 Nephi $i</a>";
+    echo "<a class='w3-bar-item w3-button w3-hover-black' href='../3nephi/3nephi$i.php'>3 Nephi $i</a>";
   } 
 ?></div>
 
-<a href="../4nephi/4nephi1"><button class="collapsible2">4 Nephi</button></a>
+<a href="../4nephi/4nephi1.php"><button class="collapsible2">4 Nephi</button></a>
 
 <button class="collapsible">Mormon</button>
 <div class="content">
   <?php 
   for ($i = 1 ; $i <= 9 ; $i++){
-    echo "<a class='w3-bar-item w3-button w3-hover-black' href='../mormon/mormon$i'>Mormon $i</a>";
+    echo "<a class='w3-bar-item w3-button w3-hover-black' href='../mormon/mormon$i.php'>Mormon $i</a>";
   } 
 ?></div>
 
@@ -284,7 +284,7 @@ function w3_close() {
 <div class="content">
   <?php 
   for ($i = 1 ; $i <= 15 ; $i++){
-    echo "<a class='w3-bar-item w3-button w3-hover-black' href='../ether/ether$i'>Ether $i</a>";
+    echo "<a class='w3-bar-item w3-button w3-hover-black' href='../ether/ether$i.php'>Ether $i</a>";
   } 
 ?></div>
 
@@ -293,7 +293,7 @@ function w3_close() {
 <div class="content">
   <?php 
   for ($i = 1 ; $i <= 10 ; $i++){
-    echo "<a class='w3-bar-item w3-button w3-hover-black' href='../moroni/moroni$i'>Moroni $i</a>";
+    echo "<a class='w3-bar-item w3-button w3-hover-black' href='../moroni/moroni$i.php'>Moroni $i</a>";
   } 
 ?></div>
 
