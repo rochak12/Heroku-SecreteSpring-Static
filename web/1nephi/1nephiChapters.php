@@ -45,27 +45,27 @@
 <!-- Chapter Header -->
 	<div class="flex-container">
 		<a href="1nephi1.php"><div>1 </a></div>
-		<div><a href="1nephi2.php"> 2 </a></div>
-		<div><a href="1nephi3.php"> 3</a></div>
-		<div><a href="1nephi4.php"> 4</a></div>
-		<div><a href="1nephi5.php"> 5</a></div>
-		<div><a href="1nephi6.php"> 6</a></div>
-		<div><a href="1nephi7.php"> 7</a></div>
-		<div><a href="1nephi8.php"> 8</a></div>
-		<div><a href="1nephi9.php"> 9</a></div>
-		<div><a href="1nephi10.php">10</a></div>
-		<div><a href="1nephi11.php">11</a></div>
-		<div><a href="1nephi12.php">12</a></div>
-		<div><a href="1nephi13.php">13</a></div>
-		<div><a href="1nephi14.php">14</a></div>
-		<div><a href="1nephi15.php">15</a></div>
-		<div><a href="1nephi16.php">16</a></div>
-		<div><a href="1nephi17.php">17</a></div>
-		<div><a href="1nephi18.php">18</a></div>
-		<div><a href="1nephi19.php">19</a></div>
-		<div><a href="1nephi20.php">20</a></div>
-		<div><a href="1nephi21.php">21</a></div>
-		<div><a href="1nephi22.php">22</a></div>
+		<div><a href="../1nephi/1nephi2.php"> 2 </a></div>
+		<div><a href="../1nephi/1nephi3.php"> 3</a></div>
+		<div><a href="../1nephi/1nephi4.php"> 4</a></div>
+		<div><a href="../1nephi/1nephi5.php"> 5</a></div>
+		<div><a href="../1nephi/1nephi6.php"> 6</a></div>
+		<div><a href="../1nephi/1nephi7.php"> 7</a></div>
+		<div><a href="../1nephi/1nephi8.php"> 8</a></div>
+		<div><a href="../1nephi/1nephi9.php"> 9</a></div>
+		<div><a href="../1nephi/1nephi10.php">10</a></div>
+		<div><a href="../1nephi/1nephi11.php">11</a></div>
+		<div><a href="../1nephi/1nephi12.php">12</a></div>
+		<div><a href="../1nephi/1nephi13.php">13</a></div>
+		<div><a href="../1nephi/1nephi14.php">14</a></div>
+		<div><a href="../1nephi/1nephi15.php">15</a></div>
+		<div><a href="../1nephi/1nephi16.php">16</a></div>
+		<div><a href="../1nephi/1nephi17.php">17</a></div>
+		<div><a href="../1nephi/1nephi18.php">18</a></div>
+		<div><a href="../1nephi/1nephi19.php">19</a></div>
+		<div><a href="../1nephi/1nephi20.php">20</a></div>
+		<div><a href="../1nephi/1nephi21.php">21</a></div>
+		<div><a href="../1nephi/1nephi22.php">22</a></div>
 	</div>
 	
 

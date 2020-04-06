@@ -46,7 +46,7 @@
 	<div class="flex-container">
 		<?php 
 		for ($i = 1; $i <= 29 ; $i++){
-			echo "<a href='mosiah$i.php'><div>$i</a></div>";
+			echo "<a href='../mosiah/mosiah$i.php'><div>$i</a></div>";
 		}	?>	
 	</div>
 	
