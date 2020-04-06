@@ -20,7 +20,7 @@ try {
  $db = new PDO($newVar, $dbUser, $dbPassword);
 }
 catch (PDOException $ex) {
- print "<p>error: " . $ex->getMessage() */. "</p>\n\n";
+ print "<p>error: " . $ex/*->getMessage() */. "</p>\n\n";
  die();
 }
 ?>
