@@ -3,7 +3,7 @@
   var verseNo;
   var bookName;
   var chapterName;
-  function callevent(iddd, event) {
+/*  function callevent(iddd, event) {
   verseNo=iddd;
   content = (document.all) ? document.selection.createRange().text : document.getSelection();
   if (content != ""){
@@ -19,7 +19,7 @@
   document.getElementById('option').style.visibility = 'visible';
 
        }
-}
+}*/
 function highlight(bookNamee, chapterNamee){  
  bookName = bookNamee;
  chapterName = chapterNamee;
