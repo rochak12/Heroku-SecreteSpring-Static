@@ -75,9 +75,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     $chapterName = $obj['books'][7]['chapters'][19]['chapter'];
     $GLOBALS['i'] = 0;
    
-    foreach ($db->query("SELECT * FROM book where name_book ='$bookName'") as $booklist){
+    /*foreach ($db->query("SELECT * FROM book where name_book ='$bookName'") as $booklist){
       $GLOBALS['bookNo'] =  $booklist['book_id'];
-    }
+    }*/
    foreach ($obj['books'][7]['chapters'][19]['verses'] as $print )  
    {
      $flag1 = FALSE;
@@ -88,7 +88,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
      else
  {    $username = $_SESSION['username']; }
      
-     if ($db->query("SELECT * FROM highlight where book_id=8 and chapter=20 and verse = $currentVerse and username = '$username' ")){
+     /*if ($db->query("SELECT * FROM highlight where book_id=8 and chapter=20 and verse = $currentVerse and username = '$username' ")){
     foreach ($db->query("SELECT * FROM highlight where book_id=8 and chapter=20 and username = '$username' ") as $row){
      if ($row['verse'] === $print['verse']){
         echo "<tr><td class='english highlight'  id='"  . $print['verse'] ."'" . "onmouseup='callevent(" . $print['verse'] .  ",event)'><mark>";   
@@ -103,7 +103,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
         $flag1 = TRUE;
        }
       }
-    }
+    }*/
     if ($flag1 == TRUE) { continue;}
    echo "<tr><td class='english unhighlight'  id='"  . $print['verse'] ."'" . "onmouseup='callevent(" . $print['verse'] .  ",event)'>";   
    echo $print['verse'] . " " ;
