@@ -75,7 +75,7 @@ session_start();
     $chapterName = $obj['books'][0]['chapters'][2]['chapter'];
     $GLOBALS['i'] = 0;
    
-    foreach ($db->query("SELECT * FROM book where name_book ='$bookName'") as $booklist){
+    //foreach ($db->query("SELECT * FROM book where name_book ='$bookName'") as $booklist){
       $GLOBALS['bookNo'] =  $booklist['book_id'];
     }
    foreach ($obj['books'][0]['chapters'][2]['verses'] as $print )  
@@ -88,9 +88,9 @@ session_start();
      else
  {    $username = $_SESSION['username']; }
      
-     if ($db->query("SELECT * FROM highlight where book_id=1 and chapter=3 and verse = $currentVerse and username = '$username' ")){
-    foreach ($db->query("SELECT * FROM highlight where book_id=1 and chapter=3 and username = '$username' ") as $row){
-     if ($row['verse'] === $print['verse']){
+     //if ($db->query("SELECT * FROM highlight where book_id=1 and chapter=3 and verse = $currentVerse and username = '$username' ")){
+    //foreach ($db->query("SELECT * FROM highlight where book_id=1 and chapter=3 and username = '$username' ") as $row){
+     //if ($row['verse'] === $print['verse']){
         echo "<tr><td class='english highlight'  id='"  . $print['verse'] ."'" . "onmouseup='callevent(" . $print['verse'] .  ",event)'><mark>";   
         echo $print['verse'] . " " ;
         echo $print['text'] . "</mark></td></tr>" ;
